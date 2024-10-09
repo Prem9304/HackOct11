@@ -1,0 +1,10 @@
+src/
+  ├── components/
+  │   └── Layout.jsx
+  ├── pages/
+  │   ├── WelcomeScreen.jsx
+  │   ├── WorkoutDashboard.jsx
+  │   ├── NutritionTracker.jsx
+  │   ├── ProgressTracker.jsx
+  │   └── AiAssistant.jsx
+  └── App.jsx

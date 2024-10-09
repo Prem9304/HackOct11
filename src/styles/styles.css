@@ -1,0 +1,210 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  input, button {
+    font-family: inherit;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  header p {
+    font-size: 1.125rem;
+    color: #6b7280;
+  }
+  
+  /* Page Layout */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  /* AI Assistant */
+  .ai-chat {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 8rem);
+  }
+  
+  .ai-chat-header {
+    margin-bottom: 1rem;
+  }
+  
+  .ai-chat .message-container {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .ai-chat .message {
+    max-width: 70%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .ai-chat .message.user {
+    background-color: #3b82f6;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .ai-chat .message.bot {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    align-self: flex-start;
+  }
+  
+  .ai-chat input {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-right: 0.5rem;
+  }
+  
+  .ai-chat button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .ai-chat button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Nutrition Tracker */
+  .nutrition-tracker .summary {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .nutrition-tracker .summary div {
+    font-size: 1.25rem;
+  }
+  
+  .nutrition-tracker .summary .calories {
+    font-weight: 700;
+    color: #3b82f6;
+  }
+  
+  .nutrition-tracker .add-meal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 2px dashed #d1d5db;
+    color: #6b7280;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .nutrition-tracker .add-meal:hover {
+    color: #3b82f6;
+    border-color: #3b82f6;
+  }
+  
+  .nutrition-tracker .meal-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nutrition-tracker .meal-card h3 {
+    font-weight: 600;
+  }
+  
+  /* Progress Tracker */
+  .progress-tracker .chart-container {
+    height: 300px;
+  }
+  
+  .progress-tracker .achievement {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .progress-tracker .achievement-icon {
+    font-size: 1.5rem;
+  }
+  
+  .progress-tracker .achievement-icon.green {
+    color: #10b981;
+  }
+  
+  .progress-tracker .achievement-icon.yellow {
+    color: #fbbf24;
+  }
+  
